@@ -1,0 +1,487 @@
+[
+  {
+    "record_id": "gpt_01",
+    "prompt_id": 1,
+    "task": "explanation",
+    "LLM_name": "GPT",
+    "LLM_Input": "Explain why the sky looks blue to a ten-year-old.",
+    "LLM_output": "Sunlight looks white, but itʼs actually a mix of all the rainbow colors.\nWhen sunlight enters Earthʼs atmosphere, it bumps into tiny air molecules. These scatter the light in\ndifferent directions. Blue light scatters much more than red or orange light, so blue light reaches\nyour eyes from all around the sky.\nAt sunset, sunlight travels through more air before reaching you. Much of the blue light gets scattered\naway, leaving the reds and oranges you see!",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_02",
+    "prompt_id": 2,
+    "task": "explanation",
+    "LLM_name": "GPT",
+    "LLM_Input": "Explain how a refrigerator keeps food cold.",
+    "LLM_output": "A refrigerator keeps food cold by moving heat from inside the fridge to the room outside.\nA special fluid called a refrigerant flows through pipes in a loop:\n1. Inside the fridge, it absorbs heat, cooling the air and food.\n2. A pump called a compressor squeezes the refrigerant, making it hotter.\n3. Outside the fridge, it releases that heat into the room.\n4. It passes through a small opening that lowers its pressure, making it ready to absorb heat again.\nThis cycle repeats to keep your food cold. Thatʼs also why the back or sides of a fridge can feel warm!",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_03",
+    "prompt_id": 3,
+    "task": "explanation",
+    "LLM_name": "GPT",
+    "LLM_Input": "What is the difference between weather and climate?",
+    "LLM_output": "Weather is what the air outside is like at a particular time—sunny, rainy, hot, or windy. It can change\nwithin hours.\nClimate is the usual pattern of weather in a place over many years, typically 30 years or more. For\nexample, a desert has a dry climate, even though it sometimes rains.\nThink of it this way: Weather tells you what to wear today. Climate tells you what clothes youʼll\nusually need throughout the year.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_04",
+    "prompt_id": 4,
+    "task": "explanation",
+    "LLM_name": "GPT",
+    "LLM_Input": "Explain how a computer stores text.",
+    "LLM_output": "A computer stores text using numbers represented by 0s and 1s, called bits.\n\nEach letter, number, and symbol has a code. For example, in a common encoding called UTF-8, the\nletter A is stored as the number 65, which is 01000001 in binary.\nWhen you save a word, the computer stores the codes for its letters in order. When you open it again,\nsoftware reads those codes and displays the letters.\nThink of it like a secret codebook: you see words, but the computer stores their coded numbers.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      1,
+      2
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_05",
+    "prompt_id": 5,
+    "task": "advice",
+    "LLM_name": "GPT",
+    "LLM_Input": "How can a college student prepare for an exam in one week?",
+    "LLM_output": "With one week left, focus on practicing what youʼll need to do on the exam, rather than just\nrereading notes.\nDay 1: List the topics covered and check the exam format. Try a few questions without notes to\nfind your weak spots.\nDays 2–4: Study the hardest or most important topics. After reviewing each topic, close your\nnotes and explain it from memory or solve practice problems. Revisit it the next day.\nDay 5: Take a timed practice exam or a mixed set of questions. Review your mistakes and why you\nmade them.\nDay 6: Work on those weak areas and retry missed questions without looking at the answers.\nDay 7: Do a light review, pack what you need, and get a full nightʼs sleep.\nAim for a few focused study blocks each day, with short breaks. Protect your sleep and avoid an all-\nnighter—being rested helps you use what you studied.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      2
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_06",
+    "prompt_id": 6,
+    "task": "advice",
+    "LLM_name": "GPT",
+    "LLM_Input": "Suggest ways to stay focused while studying at home.",
+    "LLM_output": "Try these ways to make studying at home easier:\nSet one clear goal: “Solve five practice problems” is easier to start than “study math.”\nPut your phone out of reach: Silence notifications and close unrelated tabs.\nUse short study blocks: Start with 25 minutes of work, then take a 5-minute break. Adjust to\nwhat works for you.\nChoose a consistent spot: Keep your desk clear and your materials ready.\nStudy actively: Answer questions, solve problems, or explain ideas aloud instead of only\nrereading.\nTell people your study hours: Ask for fewer interruptions during that time.\nKeep a distraction list: Write down unrelated thoughts or tasks so you can return to them later.\nIf youʼre struggling to start, commit to just five minutes and one small task.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      2
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_07",
+    "prompt_id": 7,
+    "task": "advice",
+    "LLM_name": "GPT",
+    "LLM_Input": "How can someone build a habit of reading every day?",
+    "LLM_output": "Make reading easy to start and enjoyable to repeat:\nStart small: Read for five minutes or two pages each day.\nUse a regular cue: Read after breakfast or before bed.\nChoose something you enjoy: Novels, comics, biographies—all count.\nKeep it within reach: Leave your book where you plan to read.\nReduce distractions: Put your phone aside during reading time.\nTrack your progress: Mark each day you read on a calendar.\nRestart after missed days: Missing one day doesnʼt erase your progress.\nFor example: “After I brush my teeth at night, Iʼll read two pages.” Increase the amount when it\nstarts feeling easy.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      2,
+      3
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_08",
+    "prompt_id": 8,
+    "task": "advice",
+    "LLM_name": "GPT",
+    "LLM_Input": "What should a student consider when choosing a roommate?",
+    "LLM_output": "A student should consider whether their daily habits and expectations fit:\nSleep and study schedules: Will late nights or early alarms disturb each other?\nCleanliness: How often should you clean, and who handles each chore?\nNoise and guests: Discuss music, parties, overnight visitors, and quiet hours.\nMoney: Agree on rent, utilities, shared supplies, and payment deadlines.\nPersonal boundaries: Decide what you can borrow or share and when to ask first.\nSmoking, drinking, and pets: Talk openly about anything that could affect the living space.\nCommunication: Can you bring up problems and resolve disagreements respectfully?\nA good friend isnʼt always a good roommate. Talk through these expectations before committing,\nand write down your agreements.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      3
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_13",
+    "prompt_id": 13,
+    "task": "reasoning",
+    "LLM_name": "GPT",
+    "LLM_Input": "A backpack costs $60 and is discounted by 25%. What is the sale price? Explain your reasoning.",
+    "LLM_output": "25% of $60 is $15: 0.25 × 60 = 15.\nSubtract the discount from the original price: 60 − 15 = 45.\nThe sale price is $45.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      3
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_14",
+    "prompt_id": 14,
+    "task": "reasoning",
+    "LLM_name": "GPT",
+    "LLM_Input": "A car travels 150 miles in 3 hours. What is its average speed? Explain how you calculated it.",
+    "LLM_output": "Average speed equals distance divided by time:\n\n150 miles ÷ 3 hours = 50 miles per hour\nThe carʼs average speed is 50 mph.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      3,
+      4
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_15",
+    "prompt_id": 15,
+    "task": "reasoning",
+    "LLM_name": "GPT",
+    "LLM_Input": "All roses are flowers. Some flowers fade quickly. Does this mean all roses fade quickly? Explain.",
+    "LLM_output": "No. “Some flowers fade quickly” doesnʼt tell us which flowers do. They could be roses, other flowers,\nor both.\nSo, knowing that all roses are flowers does not prove that all roses fade quickly.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      4
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gpt_16",
+    "prompt_id": 16,
+    "task": "reasoning",
+    "LLM_name": "GPT",
+    "LLM_Input": "A box contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball? Explain.",
+    "LLM_output": "There are 10 balls total, and 4 are red.\nThe probability of picking a red ball is:\n4/10 = 2/5 = 40%\nEach ball is equally likely to be picked, so 4 out of 10 possible choices are red.",
+    "source_file": "GPT_Responses.pdf",
+    "source_pages": [
+      4
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_01",
+    "prompt_id": 1,
+    "task": "explanation",
+    "LLM_name": "Claude",
+    "LLM_Input": "Explain why the sky looks blue to a ten-year-old.",
+    "LLM_output": "Sunlight looks white, but it's actually a mix of all the colors of the rainbow, like red, orange,\nyellow, green, blue, and purple, all blended together.\nWhen that light travels down toward Earth, it bumps into the tiny bits of air in the sky (little gas\nparticles that are way too small to see). When light hits them, it gets bounced around in all\ndirections.\nHere's the cool part: different colors bounce differently. Blue light travels in short, choppy\nwaves, so it gets knocked around a lot more than red or yellow light, which have long, lazy\nwaves that mostly slide right through. So blue light gets scattered all across the sky, and\nwherever you look up, some of that bounced blue light is flying toward your eyes.\nThink of it like throwing a bunch of ping-pong balls (blue) and bowling balls (red) at a pile of\nmarbles. The ping-pong balls ricochet everywhere, while the bowling balls plow straight\nthrough.\nYou might wonder why the sky isn't purple, since purple bounces even more than blue. Two\nreasons: the sun gives off less purple light to begin with, and our eyes aren't very good at seeing\npurple. Blue wins.\nAnd that's also why sunsets are red and orange. When the sun is low, its light has to travel\nthrough way more air to reach you, so almost all the blue gets bounced away before it gets to\nyou. Only the reds and oranges are left.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_02",
+    "prompt_id": 2,
+    "task": "explanation",
+    "LLM_name": "Claude",
+    "LLM_Input": "Explain how a refrigerator keeps food cold.",
+    "LLM_output": "A refrigerator doesn't actually create cold. It moves heat from inside the fridge to the outside,\nwhich leaves the inside cooler.\nThe trick is a special liquid called a refrigerant that circulates through a loop of pipes. It goes\nthrough four main steps:\n1. Compressor. This is the humming motor on the back or bottom. It squeezes the\nrefrigerant gas, which makes it very hot and high-pressure.\n2. Condenser coils. These are the pipes on the back or underneath. The hot gas flows\nthrough them and releases its heat into the room's air (that's why the back of a fridge feels\nwarm). As it cools off, the gas turns into a liquid.\n3. Expansion valve. The liquid is forced through a tiny opening, and its pressure suddenly\ndrops. When pressure drops, the refrigerant gets very cold, colder than the inside of the\nfridge.\n4. Evaporator coils. These pipes are inside the fridge. The ice-cold refrigerant flows through\nthem and soaks up heat from the air and food around it. As it absorbs that heat, it boils into\na gas again.\nThen the gas returns to the compressor, and the loop starts over.\nA good way to picture it is a sponge soaking up water in one place and getting squeezed out in\nanother. The refrigerant \"soaks up\" heat inside the fridge and \"squeezes it out\" into your\nkitchen.\nA thermostat inside tells the compressor when to run. When the inside reaches the right\ntemperature (around 37°F or 3°C), the compressor shuts off. When it warms up a bit, the\ncompressor kicks back on. That's the hum you hear starting and stopping throughout the day.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_03",
+    "prompt_id": 3,
+    "task": "explanation",
+    "LLM_name": "Claude",
+    "LLM_Input": "What is the difference between weather and climate?",
+    "LLM_output": "Weather is what the atmosphere is doing right now or over a few days: today's rain, tomorrow's\nhigh of 65°F, a thunderstorm this afternoon. Climate is the pattern of weather in a place\naveraged over a long time, usually 30 years or more.\nA common way to remember it: weather is your mood, climate is your personality. Someone\ncan be grumpy one afternoon without being a grumpy person, and a place can have a cold snap\nwithout having a cold climate.\nSome examples:\n• Weather: \"It snowed in State College last night.\" Climate: \"Central Pennsylvania has cold\nwinters and warm, humid summers.\"\n• Weather: \"This July was unusually cool.\" Climate: \"July is typically the hottest month\nhere.\"\nWeather changes fast and is hard to predict more than about a week or two out, because small\nchanges in the atmosphere can snowball. Climate changes slowly and is described with\naverages and trends, like the typical temperature, rainfall, and how often extreme events\nhappen.\nThat's why one record-cold day doesn't disprove global warming. A single day is weather.\nClimate shifts show up in decades of data, such as average temperatures rising or heat waves\nbecoming more frequent over time.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      2
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_04",
+    "prompt_id": 4,
+    "task": "explanation",
+    "LLM_name": "Claude",
+    "LLM_Input": "Explain how a computer stores text.",
+    "LLM_output": "A computer only understands numbers, and at the lowest level, only 1s and 0s (called bits). So\nto store text, it uses a simple trick: give every character a number, then store that number in\nbinary.\nStep 1: A lookup table assigns each character a number.\nThe most famous one is ASCII, which says things like:\n• \"A\" = 65\n• \"B\" = 66\n• \"a\" =97\n• \"!\" =33\n• space = 32\nStep 2: The number is stored in binary.\nThe number 65 in binary is 01000001. That's 8 bits, which is called one byte. So the letter \"A\"\ntakes up one byte of storage.\nStep 3: A word is just a row of those bytes.\nThe word \"Hi\" becomes:\n• H =72 =01001000\n• i = 105 = 01101001\nSo \"Hi\" is stored as 01001000 01101001. When you open the file, the computer reads each byte,\nlooks up the matching character, and draws it on your screen using a font.\nWhat about other languages and emoji?\nASCII only covers about 128 characters, basically English letters, digits, and punctuation. That\ndoesn't work for Chinese, Arabic, Hindi, or emoji. So the world agreed on a much bigger table\ncalled Unicode, which assigns a number to over 150,000 characters.\nThe most common way to store Unicode is UTF-8, which is clever about space. Plain English\nletters still take just one byte (so it's compatible with ASCII), while other characters take two,\nthree, or four bytes. An emoji like 😀 takes four.\nWhy this matters:\nIf a program reads text using the wrong table, you get garbled gibberish like \"Ã©\" instead of \"é\".\nThe bytes are right, but the program is looking up the wrong characters. That's called an\nencoding problem.\nSo in short: text on a computer is just numbers in disguise, and a shared lookup table is what\nturns them back into letters.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      3
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_05",
+    "prompt_id": 5,
+    "task": "advice",
+    "LLM_name": "Claude",
+    "LLM_Input": "How can a college student prepare for an exam in one week?",
+    "LLM_output": "A week is enough time to prepare well if you spread the work out and focus on active practice\ninstead of rereading.\nDay 1: Map the exam\n• Collect everything: syllabus, lecture slides, notes, homework, past exams, and any review\nsheet.\n• Find out the format (multiple choice, problem solving, essay, open-note?) and which\ntopics are covered.\n• List every topic and rate each one: confident, shaky, or lost. This list drives the rest of your\nweek.\nDays 2-4: Learn the weak spots\n• Start with the \"lost\" and \"shaky\" topics while your energy is highest.\n• Work problems or answer questions instead of rereading. If the exam is math or CS, redo\nhomework and examples without looking at the solutions.\n• For concept-heavy subjects, explain each idea out loud as if teaching a friend. Wherever\nyou stumble is where you don't understand it yet.\n• Go to office hours or ask a classmate about anything you're stuck on. Don't wait until the\nnight before.\nDay 5: Mix and test\n• Take a practice exam or build one from homework and old quizzes. Time yourself and use\nonly what you'll be allowed in the real exam.\n• Grade it and write down why you missed each question (concept gap, careless error, ran\nout of time).\nDay 6: Patch the gaps\n• Review only your mistakes and the topics that still feel shaky.\n• Condense everything onto a one-page summary of key formulas, definitions, and ideas.\nMaking it is useful even if you can't bring it to the exam.\n• Do a second, shorter practice round.\nDay 7: Light review\n• Skim your summary sheet and fix any last small gaps. Don't start new material.\n• Prepare what you need for the exam: ID, calculator, pencils, route, and start time.\n• Sleep at least 7 hours. Sleep matters more for recall than an extra late-night hour of\nstudying.\nHabits that help all week\n• Study in focused blocks of 25-50 minutes with 5-10 minute breaks. Keep your phone out of\nreach.\n• Test yourself often. Retrieving information from memory sticks far better than rereading\nor highlighting.\n• Space out topics and revisit them over several days instead of cramming each one once.\n• Eat regular meals, drink water, and move around a bit. It sounds minor, but it affects focus.\nIf you tell me the subject and the exam format, I can tailor this into a more specific plan.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      4
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_06",
+    "prompt_id": 6,
+    "task": "advice",
+    "LLM_name": "Claude",
+    "LLM_Input": "Suggest ways to stay focused while studying at home.",
+    "LLM_output": "Staying focused at home mostly comes down to making distractions harder to reach and\nmaking it obvious when you're \"on.\"\nSet up your space\n• Study in the same spot each time, ideally not your bed. Your brain starts linking that spot\nwith focus.\n• Clear the surface of everything you don't need for the task at hand.\n• Keep your phone out of reach, in another room if you can. Even a phone face-down on the\ndesk pulls at your attention.\nBlock digital distractions\n• Use a site blocker (like Cold Turkey, Freedom, or StayFocusd) for social media and video\nsites during study blocks.\n• Close extra tabs and mute notifications on your computer.\n• If you need music, try instrumentals, lo-fi, or video game soundtracks. Lyrics compete\nwith reading and writing.\nStructure your time\n• Work in short, timed blocks, like 25 minutes on and 5 off (Pomodoro) or 50 on and 10 off. A\nclear end point makes starting easier.\n• Decide before each block exactly what you'll accomplish, such as \"finish problems 1-6\"\ninstead of\"study algorithms.\"\n• Start with the hardest or most dreaded task while your energy is highest.\n• Keep a scrap paper nearby. When a random thought or errand pops up, jot it down and get\nback to work instead of acting on it.\nTake care of your body\n• Eat something and have water nearby before you start so hunger doesn't derail you.\n• Use breaks to stand, stretch, or walk around, not to scroll. Scrolling makes it harder to\nreturn to studying.\n• Get enough sleep. Tired brains drift constantly, and no technique fully fixes that.\nHandle the people factor\n• Tell roommates or family your study hours, and use headphones or a closed door as a\nsignal.\n• Try studying alongside a friend over a video call or \"study with me\" livestream. Having\nsomeone else working nearby keeps you honest.\nWhen you still can't focus\n• Start with just five minutes. Getting started is usually the hardest part, and momentum\noften carries you from there.\n• If you're stuck on something for 15-20 minutes, switch to a different task or ask for help\ninstead of staring at it.\n• Change locations. A library or coffee shop can reset your focus if home isn't working.\nPick two or three of these to try this week instead of changing everything at once. What works\nvaries a lot from person to person.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      5
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_07",
+    "prompt_id": 7,
+    "task": "advice",
+    "LLM_name": "Claude",
+    "LLM_Input": "How can someone build a habit of reading every day?",
+    "LLM_output": "Building a daily reading habit works best when you make it tiny, attach it to something you\nalready do, and remove friction.\nStart small\n• Commit to 10 minutes or even 5 pages a day. The goal early on is consistency, not volume.\nYou can always read more, but never drop below your minimum.\n• Aim for \"never miss twice.\" If you skip a day, just make sure you read the next one.\nAnchor it to your routine\n• Pick a trigger that already happens daily: after your morning coffee, during lunch, right\nafter brushing your teeth, or before bed.\n• Decide the time and place in advance (\"I read on the couch after dinner\") so you aren't\nnegotiating with yourself each day.\nMake it easy\n• Keep a book where you'll see it: on your pillow, desk, or in your bag. Keep an e-reader or\nreading app on your phone for waiting in lines.\n• Put your phone in another room during reading time, or leave it charging across the room\nat night so the book is the easier thing to grab.\n• Always have your next book picked out so you never stall between titles.\nChoose books you want to read\n• Read what's fun or interesting, not what you think you should. Fiction, graphic novels, and\nnonfiction all count.\n• Give yourself permission to quit a book that isn't working after 50 pages or so. A boring\nbook kills a habit fast.\n• Try audiobooks for commutes, chores, or walks. They count too.\nMake progress visible\n• Track your streak with a calendar, habit app, or Goodreads. Watching a chain of days grow\nis surprisingly motivating.\n• Set a loose yearly goal, like 12 books, but don't let it turn reading into a chore.\nAdd a little reward or accountability\n• Pair reading with something enjoyable, like tea or a comfortable spot.\n• Join a book club, swap recommendations with a friend, or jot a one-line note about what\nyou read each day.\nIf you fall off\n• Drop back to your minimum rather than quitting. Five minutes still keeps the habit alive.\n• Look at what got in the way (schedule, wrong book, phone) and adjust that one thing.\nPick one trigger, one book, and one tiny target, and start today. Once it feels automatic, increase\nthe time gradually.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      6
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_08",
+    "prompt_id": 8,
+    "task": "advice",
+    "LLM_name": "Claude",
+    "LLM_Input": "What should a student consider when choosing a roommate?",
+    "LLM_output": "Compatibility matters more than friendship. Plenty of close friends make terrible roommates,\nand plenty of near-strangers get along fine because their habits line up.\nDaily habits\n• Sleep schedule: Early bird versus night owl is one of the biggest sources of conflict. Also\nconsider whether they're a light or heavy sleeper.\n• Cleanliness: Compare standards for dishes, trash, bathrooms, and general mess.\nMismatched tolerance causes more resentment than almost anything else.\n• Noise: Think about music, calls, gaming, and whether they need silence to study.\n• Guests: Talk about how often friends or partners can visit and whether overnight stays are\nokay.\nStudy and lifestyle\n• Do your study styles clash? A person who studies at 11 p.m. in a shared room affects you,\nand so does your late-night typing.\n• How do you each feel about parties, drinking, or other substances? Being on different\npages here can create real stress.\n• Consider how much time each of you plans to spend in the space. Someone always home\nand someone rarely home can still work well, as long as you both know it going in.\nMoney and shared stuff\n• Agree on how to split rent, utilities, internet, and groceries.\n• Decide what's shared (cookware, TV, cleaning supplies) and what's off-limits.\n• Make sure they're reliable about paying on time, especially if you're both on a lease.\nCommunication style\n• Can you picture yourself telling this person \"that bothers me\" and having it go okay?\nAvoidant or easily offended people make small issues grow.\n• Ask how they handle conflict. Honest, calm people are far better bets than those who stew\nor blow up.\nPractical stuff\n• Check lease terms, location, commute, and whether the place has enough room and\nstorage for two.\n• Ask about pets, allergies, smoking or vaping, and anything else that could be a\ndealbreaker.\nBefore you commit\n• Have an honest conversation about all of this before signing anything. Use a roommate\nagreement (many schools provide templates) to put expectations in writing.\n• Ask for references or check in with past roommates if you're unsure.\n• If you're matched by a housing office, fill out any questionnaire truthfully rather than\naiming to sound agreeable.\nTry to be honest about your own habits too. The best predictor of a good match is knowing\nwhat you need and finding someone whose needs fit alongside yours.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      7
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_13",
+    "prompt_id": 13,
+    "task": "reasoning",
+    "LLM_name": "Claude",
+    "LLM_Input": "A backpack costs $60 and is discounted by 25%. What is the sale price? Explain your reasoning.",
+    "LLM_output": "The sale price is $45.\nStep 1: Find the discount amount.\n25% of $60 is 0.25 x 60 = $15.\nStep 2: Subtract it from the original price.\n$60 - $15 = $45.\nShortcut: A 25% discount means you pay the other 75%. So 0.75 × 60 = $45, which gives the\nsame answer in one step.\nQuick check: 25% is the same as one quarter, and a quarter of $60 is $15. Taking $15 off $60\nleaves $45.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      8
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_14",
+    "prompt_id": 14,
+    "task": "reasoning",
+    "LLM_name": "Claude",
+    "LLM_Input": "A car travels 150 miles in 3 hours. What is its average speed? Explain how you calculated it.",
+    "LLM_output": "The average speed is 50 miles per hour.\nStep 1: Use the speed formula.\nAverage speed = distance ÷ time.\nStep 2: Plug in the numbers.\n150 miles ÷ 3 hours = 50 miles per hour.\nQuick check: If the car goes 50 miles each hour, then after 3 hours it has gone 50 × 3 = 150\nmiles, which matches the problem.\nNote that this is an average. The car may have gone faster on some stretches and slower on\nothers (or stopped at a light), but overall it covered the distance at the same pace as a car\nholding a steady 50 mph the whole way.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      8
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_15",
+    "prompt_id": 15,
+    "task": "reasoning",
+    "LLM_name": "Claude",
+    "LLM_Input": "All roses are flowers. Some flowers fade quickly. Does this mean all roses fade quickly? Explain.",
+    "LLM_output": "No, it doesn't follow. The conclusion \"all roses fade quickly\" isn't supported by those two\nstatements.\nWhat the statements tell us\n1. All roses are flowers. (Roses are a subset of flowers.)\n2. Some flowers fade quickly. (A portion of flowers, unspecified, fades quickly.)\nWhy the conclusion fails\nThe second statement only says that some flowers fade quickly. It doesn't say which ones.\nThose fast-fading flowers could be tulips, poppies, or morning glories, and roses might not be\namong them at all. Or roses might be partly included. The statements leave all of those\npossibilities open.\nA picture of it\nImagine a big circle labeled \"flowers.\" Inside it is a smaller circle for \"roses.\" Now draw a second\ncircle for \"fade quickly\" that overlaps part of the flower circle. That overlap could sit entirely\noutside the rose circle, cover part of it, or cover all of it. The premises don't tell us which, so we\ncan't conclude anything definite about roses.\nA parallel example that shows the flaw\n• All dogs are animals.\n• Some animals can fly.\n• Therefore, all dogs can fly.\nThat's clearly wrong, yet it has exactly the same structure. A logical argument has to work for\nevery case with that structure, so this one is invalid.\nThe general rule\nKnowing something is true of some members of a larger group tells you nothing certain about a\nparticular subgroup. To conclude that all roses fade quickly, you'd need a premise like \"all\nflowers fade quickly\" or \"all roses fade quickly.\"",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      9
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "claude_16",
+    "prompt_id": 16,
+    "task": "reasoning",
+    "LLM_name": "Claude",
+    "LLM_Input": "A box contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball? Explain.",
+    "LLM_output": "The probability is 2/5, which is 0.4 or 40%.\nStep 1: Count the total outcomes.\nThere are 4 red + 6 blue = 10 balls in the box.\nStep 2: Count the favorable outcomes.\nThere are 4 red balls.\nStep 3: Use the probability formula.\nProbability = favorable outcomes ÷ total outcomes = 4 ÷ 10 = 2/5.\nQuick check: The red and blue probabilities should add up to 1. The blue probability is 6/10,\nand 4/10 + 6/10 = 1, so the numbers are consistent.\nThis works because each ball is equally likely to be picked. If you reached in 10 times, putting\nthe ball back each time, you'd expect to pull out a red ball about 4 of those times.",
+    "source_file": "Claude_Responses.pdf",
+    "source_pages": [
+      9
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_01",
+    "prompt_id": 1,
+    "task": "explanation",
+    "LLM_name": "Gemini",
+    "LLM_Input": "Explain why the sky looks blue to a ten-year-old.",
+    "LLM_output": "Imagine sunlight as a huge bucket filled with paint of every color in the rainbow. When all\nthose colors mix together in light, they look plain white!\nWhen that white light travels from the Sun to Earth, it hits our atmosphere, which is a thick\nblanket of air filled with invisible gases like nitrogen and oxygen.\nHere is why only the blue shows up:\nLight travels in waves: Some colors travel in big, lazy waves (like red and orange).\nOther colors travel in short, fast, choppy waves (like blue and violet).\nThe gases act like pinball bumpers: The air molecules in the sky are tiny. Big lazy red\nwaves slide right past them without bumping into much. But those short, choppy blue\nwaves crash into the air molecules and bounce all over the place in every direction.\nScientists call this scatter effect Rayleigh scattering. Because blue light gets bounced\naround the sky like a tiny pinball, everywhere you look up, blue light is bouncing right into\nyour eyes!\nBonus Fact: The choppy violet waves actually bounce around even more than blue! But the\nsky doesn't look purple because our eyes are much better at seeing blue than purple, and\nthe Sun naturally sends out a lot more blue light than violet light.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      1
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_02",
+    "prompt_id": 2,
+    "task": "explanation",
+    "LLM_name": "Gemini",
+    "LLM_Input": "Explain how a refrigerator keeps food cold.",
+    "LLM_output": "A refrigerator keeps your food cold by doing something clever: it doesn't actually \"add\ncold\" to the fridge—it absorbs heat from inside and pumps it outside into your kitchen.\nHere is how the continuous cooling loop works:\n\n1. The Refrigerant (The Heat Collector)\nInside the fridge's metal coils flows a special fluid called a refrigerant. This liquid is\nengineered to evaporate into a gas at very low temperatures.\n2. The Four-Step Cooling Cycle\n[Evaporator Coils (Inside)]\n(Refrigerant absorbs heat & boils)\n▲ │\n│ ▼\n[Expansion Valve] [Compressor]\n(Drops pressure (Squeezes gas into hot,\n& cools liquid) high-pressure fluid)\n▲ │\n│ ▼\n[Condenser Coils (Outside)]\n(Refrigerant releases heat to room)\n1. Evaporation (Absorbing Heat Inside): Cold liquid refrigerant passes through metal\ntubes (evaporator coils) inside the freezer and fridge compartment. As air inside the\nfridge passes over these cold tubes, the refrigerant absorbs the thermal energy from\nyour food and air, causing the fluid to boil into a cold gas.\n2. Compression (Squeezing the Heat): A electric pump called the compressor draws in\nthis cool gas and squeezes it under high pressure. Squeezing gas packs its heat energy\ntightly together, making it extremely hot.\n3. Condensation (Dumping Heat Outside): The hot, pressurized gas flows through the\ncoils on the back or bottom of the fridge (condenser coils). Because the room air is\ncooler than the hot coils, heat radiates out into your kitchen, and the gas condenses\nback into a high-pressure liquid. (This is why the back or bottom of a fridge feels warm\nto the touch.)\n4. Expansion (The Chill Step): The high-pressure liquid passes through a tiny valve called\nan expansion valve or capillary tube into a wide, low-pressure area. The sudden drop\nin pressure causes the liquid temperature to plummet instantly—similar to how an\naerosol spray can feels freezing cold when you hold down the nozzle.\nThe chilled liquid refrigerant then flows back into the inside coils, and the cycle repeats until\nthe thermostat detects that the inside has reached the set temperature.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      1,
+      2
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_03",
+    "prompt_id": 3,
+    "task": "explanation",
+    "LLM_name": "Gemini",
+    "LLM_Input": "What is the difference between weather and climate?",
+    "LLM_output": "The difference comes down to time and scale: weather is what is happening in the\natmosphere right now (or over a few days), while climate is the long-term pattern of\nweather averaged over decades.\nA common way to remember it is: \"Climate is what you expect, weather is what you get.\"\nFeature | Weather | Climate\nTimeframe | Minutes, hours, days, or weeks | Decades, centuries, or millennia (standard baseline is 30 years)\nArea Covered | Very local (a single neighborhood, city, or county) | Regional or global (a whole state, continent, or the entire planet)\nExamples | \"It's 65°F and raining today,\" or \"Expect a snowfall this afternoon.\" | \"Florida has humid, tropical summers,\" or \"Antarctica is a cold desert.\"\nPredictability | Forecasts change rapidly day-to-day. | Trends are stable and predictable over long spans.\nWho Studies It? | Meteorologists | Climatologists\nHow They Interact\nThink of climate as a person's overall personality, and weather as their mood today.\n\nA person who is generally happy (a warm climate) can still have a bad day (a sudden\nwinter cold snap).\nA single cold day doesn't mean their personality changed—just like a unusually cold\nweek in July doesn't mean global climate trends have stopped.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      3,
+      4
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_04",
+    "prompt_id": 4,
+    "task": "explanation",
+    "LLM_name": "Gemini",
+    "LLM_Input": "Explain how a computer stores text.",
+    "LLM_output": "At its core, a computer can only store and process numbers—specifically binary numbers\ncomposed of 0s and 1s (bits). To store text, computers use a system called character\nencoding, which assigns a unique number to every character, letter, symbol, and digit.\nHere is how text moves from a keypress to digital storage:\n1. Character Sets: Mapping Letters to Numbers\nA character set is a giant translation lookup table. When you type the letter A , the\ncomputer doesn't save the shape of the letter; it saves the number assigned to it.\nTwo main encoding systems govern how text is stored:\nASCII (American Standard Code for Information Interchange):\nCreated in the 1960s, ASCII uses 7 bits (usually stored in 1 byte) to represent 128\ncharacters.\nIt includes English letters (A–Z, a–z), numbers (0–9), basic punctuation, and\ncontrol commands (like Enter or Backspace ).\nExample: Capital letter A is mapped to the decimal number 65 .\nUnicode (The Modern Standard):\nASCII works for English, but it cannot represent accents, non-Latin alphabets, or\nemojis. Unicode was created to give every character in every language a unique\nnumber (a \"Code Point\").\nUnicode covers over 150,000 characters, including alphabets (Greek, Cyrillic,\nKanji, Devanagari), mathematical symbols, and emojis.\n\nExample: The emoji 😊 is mapped to Unicode code point U+1F60A (decimal\n128522 ).\n2. Binary Encoding: Converting Numbers to 0s and 1s\nOnce a character is mapped to a number, that number is converted into binary (Base-2) so\nhardware can store it as electrical signals, magnetic charges, or optical pits.\nThe most common way to write Unicode numbers into binary bytes is UTF-8 (Unicode\nTransformation Format - 8-bit):\nVariable Length: UTF-8 uses 1 byte for standard ASCII characters, but scales up to 4\nbytes for complex characters and emojis.\nBackward Compatible: The first 128 characters of UTF-8 are identical to ASCII.\nTracing the word \"Hi!\" in UTF-8:\nCharacter | ASCII / Unicode Decimal | Hexadecimal | UTF-8 Binary By\nH | 72 | 0x48 | 01001000\ni | 105 | 0x69 | 01101001\n! | 33 | 0x21 | 00100001\nWhen you save a plain text file containing \"Hi!\" , the storage drive writes those 24\nconsecutive bits:\n010010000110100100100001\n3. Hardware Storage\nAt the physical hardware level, those bits are translated into physical states depending on\nthe storage medium:\nRAM (Memory): Thousands of tiny microscopic capacitors hold electric charges\n(Charge = 1 , No Charge = 0 ).\n\nSSD (Solid State Drive): Electrons are trapped inside floating-gate flash memory cells\nto hold voltage states without power.\nHDD (Hard Disk Drive): Microscopic magnetic domains on a spinning platter are",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      4,
+      5,
+      6
+    ],
+    "incomplete_source": true
+  },
+  {
+    "record_id": "gemini_05",
+    "prompt_id": 5,
+    "task": "advice",
+    "LLM_name": "Gemini",
+    "LLM_Input": "How can a college student prepare for an exam in one week?",
+    "LLM_output": "Preparing for an exam in seven days requires shifting from long-term studying to strategic\ntriage and active retrieval.\nHere is a daily execution framework to maximize your score in 7 days:\n7-Day Exam Rescue Plan\nDay 1 Days 2–4 Day 5 Day 6 Day 7\nTriage ──► Focus Learning ──► Full Run ──► Refine/Fix ──► Rest/Review\n1 Day 1: Audit, Triage & Map\nTime needed: 2–3 hours\nGather the syllabus, exam format, past midterms, and lecture slides.\nDivide content into 3 buckets:\nGreen: Concepts you know well (light review only).\nYellow: Concepts you understand partially or make small mistakes on.\nRed: Topics you are completely lost on or haven't covered yet.\nPrioritize high-yield topics: Cross-reference the syllabus and past exams. Focus\n70% of your remaining study time on High-Yield Red and Yellow topics.\n\n2 Day 2–4: Active Learning Blocks\nTarget 2–3 deep focus blocks per day\nDitch passive reading and re-highlighting. Use high-efficiency study techniques:\nThe Feynman Technique: Pick a tough topic, write down an explanation of it in\nsimple terms as if teaching someone else, identify where you stall, and review the\nsource material to fill the gaps.\nPractice Problems First: Work through assigned problems, past quizzes, or\ntextbook questions before re-reading notes.\nBlurting Method: Read a slide or page, close the notes, and write down every\ndetail, formula, or diagram you remember on a blank piece of paper. Check your\naccuracy immediately in red ink.\n3 Day 5: Full Timed Simulation\nReplicate test conditions\nSet up a timed environment with no notes or distractions using a practice test or\na set of unseen problems.\nGrade yourself strictly using the solution key or rubric.\nMark every missed question and group them by error type: Knowledge Gap\n(didn't know the concept), Execution Error (made a calculation or reading\nmistake), or Time Pressure (ran out of time).\n4 Day 6: Targeted Gap Closure & Memory Consolidation\nFix weak spots\nFocus strictly on the error log from Day 5. Re-do every problem you got wrong\nuntil you can solve it without looking at the solution.\nFormula/Definition Sheet: Condense the entire course into a single 1-page\nsummary sheet. Writing it forces you to synthesize key concepts.\n5 Day 7: Low-Intensity Polish & Sleep\nNo late-night cramming\n\nDo a light review of high-yield formulas, definitions, or your 1-page summary\nsheet in the morning.\nStop studying by early evening.\nSleep 7–8 hours: Memory consolidation happens during REM and deep sleep. All-\nnighters severely impair working memory, problem-solving speed, and stress\ntolerance during tests.\nDaily Study Block Blueprint (Pomodoro Variant)\nStructure your study sessions using 50-minute focused blocks:\nSegment Activity Purpose\n0–5 min Setup & Goal Setting Pick 1 specific subtopic or set of 5\nproblems.\n5–45 min Deep Active Recall Solve practice problems or draft\nexplanations without looking at notes.\n45–50 min Immediate Correction Check answers against the key/notes\nand correct mistakes in real time.\n50–60 min Complete Break Step away from the desk, stretch, grab\nwater (no phone/social media).\n3 Critical Exam-Week Rules\n1. Prioritize Active Recall over Passive Review: Testing yourself causes the brain to build\nstronger retrieval pathways. Reading notes feels productive because of the \"illusion of\ncompetence,\" but yields poor retention.\n2. Eliminate Low-Efficiency Tasks: Do not spend time creating aesthetic hand-written\nflashcards or rewriting lecture notes from scratch when test day is 7 days away.\n\n3. Protect Sleep and Nutrition: Pulling an all-nighter reduces cognitive performance\nequivalent to having a blood alcohol concentration of 0.05%–0.10%.\nWant me to customize this timeline for a specific subject like Math, CS, or\nBiology?",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_06",
+    "prompt_id": 6,
+    "task": "advice",
+    "LLM_name": "Gemini",
+    "LLM_Input": "Suggest ways to stay focused while studying at home.",
+    "LLM_output": "Staying focused at home requires controlling your physical environment, structuring your\nfocus sessions, and eliminating digital distractions.\nHere are five strategy areas to help you maintain focus:\n1. Optimize Your Physical Space\nCreate a Dedicated Study Zone: Work at a desk or table reserved strictly for studying.\nAvoid studying in bed or on the couch—your brain associates those areas with sleep\nand relaxation, which induces lethargy.\nControl Visual Clutter: Keep only the materials needed for your current task on your\ndesk. A cluttered workspace increases visual cognitive load and invites distraction.\nOptimize Lighting and Noise: Ensure adequate lighting to prevent eye strain and\ndrowsiness. Use white noise, ambient sounds, or instrumental playlists (like classical,\nlo-fi, or video game soundtracks) to mask household distractions.\n2. Structure Time with Fixed Focus Intervals\nThe Pomodoro Technique: Work with complete focus for 25 to 50 minutes, then take\na strict 5 to 10-minute break. Small, defined work windows make starting easier and\nprevent mental fatigue.\nTimeboxing: Schedule specific study tasks into your calendar with designated start\nand stop times rather than working off a vague, open-ended to-do list.\n3. Eliminate Digital Distractions\n\nOut-of-Sight Phone Placement: Place your phone in another room or out of reach.\nStudies show that the mere visual presence of a smartphone reduces working memory\nand cognitive capacity, even when turned off.\nWebsite and App Blockers: Use browser extensions or phone apps (such as Freedom,\nCold Turkey, or Forest) to block social media, news, and messaging sites during study\nblocks.\nSingle-Tasking: Close unnecessary browser tabs and apps. Focus on one document,\nproblem set, or reading assignment at a time.\n4. Manage Energy and Physiology\nHydration and Fuel: Keep a water bottle at your desk and opt for protein-rich snacks\n(like nuts, yogurt, or fruit) rather than high-sugar foods that trigger energy crashes.\nActive Breaks: During breaks, stand up, stretch, walk around, or step outside. Avoid\nswitching from your study screen directly to scrolling on your phone, as this deprives\nyour brain of genuine rest.\n5. Shift to Active Engagement\nEngage with the Material: Sitting passively and reading notes quickly leads to mind-\nwandering. Switch to active methods: solve practice problems, test yourself with\nactive recall, or teach concepts out loud using a whiteboard or paper.\nSet Clear Session Deliverables: Before starting a session, define a concrete\ndeliverable (e.g., \"Complete 10 practice problems\" or \"Write 2 paragraphs of the\npaper\") rather than a time-based goal like \"Study for 2 hours.\"\nWould you like a customized study routine or timeboxing schedule for your\nspecific day?",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      9,
+      10
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_07",
+    "prompt_id": 7,
+    "task": "advice",
+    "LLM_name": "Gemini",
+    "LLM_Input": "How can someone build a habit of reading every day?",
+    "LLM_output": "Building a daily reading habit works best when you rely on behavioral design rather than\nwillpower.\n1. Start Infinitesimally Small\nThe most common mistake is setting an overly ambitious goal (like reading 30–60 minutes a\nday). When energy or time runs low, ambitious habits are the first to drop.\nThe Two-Page Rule: Commit to reading just 2 pages (or 5 minutes) every day.\nLower the Friction: Two pages is so easy that it is almost impossible to fail, even on\nyour busiest days. On most days, momentum will carry you past two pages, but hitting\nyour two-page minimum counts as a complete victory.\n2. Use Habit Stacking\nAttach your new reading habit to an existing, automatic routine you already do every single\nday.\nExisting Habit + New Habit = Automatic Routine\n\"After I pour my morning coffee, I will read 2 pages at the kitchen table.\"\n\"After I get into bed and set my alarm, I will read 5 minutes before turning off the light.\"\n\"When I sit down on the train for my daily commute, I will open my book.\"\n3. Redesign Your Physical and Digital Environment\nMake books the path of least resistance and put phone distractions out of reach.\nVisual Triggers: Place a physical book on your pillow, on your desk, or next to your\ncoffee maker so it sits directly in your field of vision.\nHome Screen Placement: If you read on a phone or Kindle app, move the reader app\nto your primary phone dock and move social media/entertainment apps into deep\nfolders or off the home screen.\nKeep a Book on You: Always carry a book or e-reader in your bag, or keep an e-book\napp synced on your phone, so you can utilize \"micro-pockets\" of idle time (standing in\nline, waiting for appointments, or commuting).\n\n4. Optimize For Enjoyment First\nWhen building a initial habit, read for friction-free pleasure, not out of obligation.\nDrop the \"Shoulds\": Don't start with dense non-fiction or classical literature just\nbecause you feel you should read it. Pick genres that genuinely hook you—sci-fi,\nthrillers, graphic novels, biography, or pop science.\nQuit Books Quickly: If a book hasn't engaged you after 30 to 50 pages, abandon it\nwithout guilt and pick up another. Forcing yourself through a boring book is the fastest\nway to stall a reading habit.\n5. Track Momentum\nVisually seeing your streak builds psychological momentum and reinforces your identity as a\nreader.\nUse a Simple Tracker: Mark an \"X\" on a wall calendar, log your pages on a habit-\ntracking app, or use reading platforms like Goodreads or StoryGraph.\nNever Miss Twice: If you miss a day due to an emergency or fatigue, make it your\nprimary goal to read your 2 pages the very next day. Missing one day is a lapse; missing\ntwo days starts a new habit of not reading.\nWant some book recommendations tailored to your favorite genres or\ntopics?",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_08",
+    "prompt_id": 8,
+    "task": "advice",
+    "LLM_name": "Gemini",
+    "LLM_Input": "What should a student consider when choosing a roommate?",
+    "LLM_output": "Choosing a roommate is one of the most critical decisions in a student's college experience\n—living well together depends much more on lifestyle compatibility than on being best\nfriends.\nHere are the key factors to evaluate before committing:\n\n1. Sleep & Schedule Alignment\nSleep Cycles: Are they an early riser or a night owl? Mismatched schedules lead to\ndisrupted sleep from morning alarms, late-night lights, or noise.\nDaily Routines: Do your class and study schedules overlap, or will you be competing\nfor the bathroom and kitchen at the exact same time every morning?\n2. Cleanliness & Household Chores\nMess Tolerance: Define what \"clean\" means to each of you. A room with clothes on the\nfloor might be fine for one person but stressful for another.\nCleaning Frequency: How often should communal areas (kitchen, bathroom, living\nroom) be deep-cleaned?\nChore Division: Are you both willing to set up an explicit chore schedule, or do you\nprefer an informal arrangement?\n3. Guests & Social Expectations\nOvernight Guests: What is the policy on partners, friends, or family staying over? How\nmuch advance notice is required?\nHosting Habits: Is the apartment/dorm meant to be a quiet sanctuary or a central\nsocial hub for parties and study groups?\nQuiet Hours: What time should shared areas become quiet on weeknights versus\nweekends?\n4. Finances & Budget (Off-Campus)\nRent & Utility Splits: Can both parties reliably cover their portion of rent, electricity,\nWi-Fi, and gas on time?\nShared Expenses: How will you handle shared household items like paper towels,\ncleaning supplies, trash bags, or basic groceries?\nLease Terms: Are both roommates signing a joint lease, or are individual leases\navailable (which protects you if the other person moves out early or fails to pay)?\n5. Communication & Conflict Resolution\nConflict Style: How do they handle disagreements—do they prefer direct, calm\nconversations, or do they tend to avoid confrontation until frustration builds up?\n\nBoundaries & Sharing: What items are shared (e.g., TV, cookware, appliances) versus\nstrictly off-limits (e.g., personal food, clothes, desk space)?\nPractical Next Steps\n1. Use a Roommate Agreement: Draft a simple written agreement covering quiet hours,\nguest rules, and cleaning duties during the first week of living together.\n2. Ask Scenario-Based Questions: Instead of asking \"Are you clean?\" (everyone says\nyes), ask \"How long do dishes usually sit in your sink before you wash them?\"\nWant a list of specific vetting questions to ask potential roommates?",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_13",
+    "prompt_id": 13,
+    "task": "reasoning",
+    "LLM_name": "Gemini",
+    "LLM_Input": "A backpack costs $60 and is discounted by 25%. What is the sale price? Explain your reasoning.",
+    "LLM_output": "To find the sale price, you can calculate the final price using either of the following methods:\nMethod 1: Calculate the Discount Amount First\n1. Find the dollar amount of the discount: Multiply the original price by the discount\npercentage (25% = 0.25).\nDiscount = 60 × 0.25 = 15\nThe discount saves you $15.\n2. Subtract the discount from the original price:\nSale Price = 60 − 15 = 45\n\nMethod 2: Calculate the Remaining Percentage\n1. Find the percentage you pay: Since the total original price is 100%, subtracting the\n25% discount means you pay 75% of the original price (100% − 25% = 75%).\n2. Multiply the original price by 75% (0.75):\nSale Price = 60 × 0.75 = 45\nThe sale price of the backpack is $45.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      14,
+      15
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_14",
+    "prompt_id": 14,
+    "task": "reasoning",
+    "LLM_name": "Gemini",
+    "LLM_Input": "A car travels 150 miles in 3 hours. What is its average speed? Explain how you calculated it.",
+    "LLM_output": "To calculate the average speed of the car, you divide the total distance traveled by the total\ntime taken.\nFormula\nAverage Speed = Total Distance / Total Time\nStep-by-Step Calculation\n1. Identify the given values:\nDistance = 150 miles\nTime = 3 hours\n2. Substitute the values into the formula:\n\nAverage Speed = 150 miles / 3 hours\n3. Divide 150 by 3:\nAverage Speed = 50 miles per hour (mph)\nThe car's average speed is 50 mph.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      15,
+      16
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_15",
+    "prompt_id": 15,
+    "task": "reasoning",
+    "LLM_name": "Gemini",
+    "LLM_Input": "All roses are flowers. Some flowers fade quickly. Does this mean all roses fade quickly? Explain.",
+    "LLM_output": "No, it does not mean all roses fade quickly.\nHere is the step-by-step breakdown of why this statement is logically invalid:\n1. Analyze Statement 1 (\"All roses are flowers\"):\nThis places the group \"roses\" entirely inside the larger group \"flowers.\" Every\nsingle rose is a flower, but not every flower is a rose (there are tulips, daisies,\nsunflowers, etc.).\n2. Analyze Statement 2 (\"Some flowers fade quickly\"):\nThis tells us that a certain portion of the \"flowers\" group has the property of\nfading quickly. However, it does not specify which flowers fade quickly.\n3. Evaluate the Conclusion (\"All roses fade quickly\"):\nThe flowers that fade quickly could easily be tulips or orchids, while roses might\nbelong to the group of flowers that do not fade quickly.\nBecause the premises do not establish an overlap between \"roses\" and \"the\nflowers that fade quickly,\" assuming that all roses fade quickly is a logical fallacy\nknown as the undistributed middle.\nWhile it might happen to be true in real life that some roses fade quickly, the logical\nstatements given do not provide enough evidence to conclude that all roses do.",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      16
+    ],
+    "incomplete_source": false
+  },
+  {
+    "record_id": "gemini_16",
+    "prompt_id": 16,
+    "task": "reasoning",
+    "LLM_name": "Gemini",
+    "LLM_Input": "A box contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball? Explain.",
+    "LLM_output": "To find the probability of randomly picking a red ball, you divide the number of red balls by\nthe total number of balls in the box.\nStep-by-Step Calculation\n1. Find the total number of outcomes (total balls):\nTotal Balls = 4 (red) + 6 (blue) = 10\n2. Identify the favorable outcomes (red balls):\nFavorable Outcomes = 4\n3. Calculate the probability:\nP(Red) = Number of Red Balls / Total Number of Balls = 4/10\n4. Simplify the fraction:\n4/10 = 2/5 = 0.4 = 40%\nThe probability of randomly picking a red ball is 2/5 (or 0.4 / 40%).",
+    "source_file": "Gemini_Responses.pdf",
+    "source_pages": [
+      17
+    ],
+    "incomplete_source": false
+  }
+]
