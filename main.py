@@ -1,11 +1,9 @@
 import argparse
 from collections import Counter
-import hashlib
 import json
 from pathlib import Path
 import random
 import re
-import sys
 
 import numpy as np
 import torch
@@ -235,7 +233,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=Path, default=ROOT / 'data.json')
     parser.add_argument('--epochs', type=int, default=30)
-    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results')
     args = parser.parse_args()
     if args.epochs < 1:
         parser.error('--epochs must be positive')
@@ -281,27 +278,11 @@ def main():
                 **evaluate(true_labels, predicted_labels),
                 'folds': fold_results, 'predictions': predictions,
             })
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    results = {
-        'config': {'seed': SEED, 'epochs': args.epochs, 'batch_size': BATCH_SIZE,
-                   'learning_rate': LEARNING_RATE, 'max_length': MAX_LENGTH,
-                   'embedding_size': 32, 'hidden_size': 32, 'dropout': 0.2,
-                   'folds': 4, 'device': 'cpu', 'labels': LABELS,
-                   'test_prompt_ids': folds, 'validation': 'None; fixed settings, no test-based selection.',
-                   'python': sys.version.split()[0], 'torch': torch.__version__,
-                   'numpy': np.__version__,
-                   'data_path': str(args.data.resolve()),
-                   'data_sha256': hashlib.sha256(args.data.read_bytes()).hexdigest()},
-        'truncated_records': {m: [r['record_id'] for r in rows if len(get_tokens(r, m)) > MAX_LENGTH]
-                              for m in MODES},
-        'experiments': experiments,
-    }
-    (args.output_dir / 'results.json').write_text(json.dumps(results, indent=2) + '\n')
     print('\nRQ1 and RQ2 results')
     for result in experiments:
         print(f"{result['model']} {result['features']}: "
               f"accuracy {result['accuracy']:.1%}, macro F1 {result['macro_f1']:.3f}")
-    print(f"Detailed results saved to {args.output_dir / 'results.json'}")
+
 
 
 
