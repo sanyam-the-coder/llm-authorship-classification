@@ -230,28 +230,6 @@ def train_fold(model_type, train_tokens, train_labels, test_tokens, epochs, seed
     return predictions, losses, train_accuracy, len(vocab)
 
 
-def save_chart(experiments, output_dir):
-    import matplotlib
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
-
-    x = np.arange(3)
-    fig, ax = plt.subplots(figsize=(8, 4.8))
-    for offset, name, color in [(-0.18, 'CNN', '#245b83'), (0.18, 'LSTM', '#d77b40')]:
-        scores = [100 * next(e['accuracy'] for e in experiments
-                            if e['model'] == name and e['features'] == mode) for mode in MODES]
-        bars = ax.bar(x + offset, scores, width=0.35, label=name, color=color)
-        ax.bar_label(bars, fmt='%.1f%%', padding=4)
-    ax.axhline(100/3, color='#777777', linestyle='--', label='Chance: 33.3%')
-    ax.set(xticks=x, xticklabels=['Prompt only', 'Response only', 'Prompt + response'],
-           ylim=(0, 110), ylabel='Accuracy (%)',
-           title='LLM identification: 36 responses, four grouped test folds')
-    ax.spines[['top', 'right']].set_visible(False)
-    ax.legend(loc='upper left', ncol=3, frameon=False)
-    fig.tight_layout()
-    fig.savefig(output_dir / 'accuracy.png', dpi=180)
-    plt.close(fig)
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -319,19 +297,12 @@ def main():
         'experiments': experiments,
     }
     (args.output_dir / 'results.json').write_text(json.dumps(results, indent=2) + '\n')
-    lines = ['# RQ1 and RQ2 results', '',
-             'Four grouped folds; 27 training and 9 test responses per fold. Each of the 36 responses is tested once.', '',
-             '| Classifier | Features | Correct / 36 | Accuracy | Macro F1 |',
-             '|---|---|---:|---:|---:|']
-    for e in experiments:
-        correct = sum(p['actual'] == p['predicted'] for p in e['predictions'])
-        lines.append(f"| {e['model']} | {e['features']} | {correct} | {e['accuracy']:.1%} | {e['macro_f1']:.3f} |")
-    lines += ['', 'RQ1 uses the output_only rows. RQ2 compares the three feature choices within each classifier.',
-              '', 'Chance accuracy is 33.3%. The prompt-only control must score exactly 33.3% because the same prompt has all three labels.',
-              '', 'Small dataset: these are exploratory results. The 36 rows contain only 12 distinct prompt groups. No model or hyperparameter was selected using test results.']
-    (args.output_dir / 'summary.md').write_text('\n'.join(lines) + '\n')
-    save_chart(experiments, args.output_dir)
-    print('\n' + '\n'.join(lines))
+    print('\nRQ1 and RQ2 results')
+    for result in experiments:
+        print(f"{result['model']} {result['features']}: "
+              f"accuracy {result['accuracy']:.1%}, macro F1 {result['macro_f1']:.3f}")
+    print(f"Detailed results saved to {args.output_dir / 'results.json'}")
+
 
 
 if __name__ == '__main__':
