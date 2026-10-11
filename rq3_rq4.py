@@ -1,13 +1,9 @@
 import argparse
 from collections import Counter
-import hashlib
-import json
 import math
 from pathlib import Path
 import statistics
-import sys
 
-import numpy as np
 import torch
 import main as project
 
@@ -100,56 +96,12 @@ def run_length_only(rows, folds, lengths):
             'method': 'Nearest training-class mean log response token count; no tuned thresholds.'}
 
 
-def write_sections(results, output_dir):
-    rq3 = results['rq3']
-    rq4 = results['rq4']
-    prefix = results['config']['prefix_tokens']
-    lines = ['### RQ3: Do LLM fingerprints generalize across tasks or domains?', '',
-             'We trained on two task categories and tested on the third, rotating explanation, advice, and reasoning. Only response text was used. Each run trained a new CNN or LSTM on 24 responses and tested on 12 responses from four unseen questions. The vocabulary was fitted on training data only. Architecture, optimizer, and other settings were reused from main.py.', '',
-             '| Classifier | Held-out task | Correct / 12 | Accuracy | Macro F1 |',
-             '|---|---|---:|---:|---:|']
-    for e in rq3:
-        correct = sum(p['actual'] == p['predicted'] for p in e['predictions'])
-        lines.append(f"| {e['model']} | {e['held_out_task']} | {correct} | {e['accuracy']:.1%} | {e['macro_f1']:.3f} |")
-    lines += ['', '#### Comparison with grouped response-only testing', '',
-              '| Classifier | Grouped response-only accuracy | Pooled unseen-task accuracy |',
-              '|---|---:|---:|']
-    for baseline in rq4['full_response']:
-        predictions = [p for e in rq3 if e['model'] == baseline['model'] for p in e['predictions']]
-        accuracy = sum(p['actual'] == p['predicted'] for p in predictions) / len(predictions)
-        lines.append(f"| {baseline['model']} | {baseline['accuracy']:.1%} | {accuracy:.1%} |")
-    lines += ['', 'The grouped response-only comparison was rerun using this same data file and settings. RQ3 changes both the task distribution and training-set size (24 instead of 27). Differences cannot therefore be attributed exclusively to domain shift. Each task test contains only four questions; training sets overlap across runs. No statistical significance or universal fingerprint claim is made.', '',
-              '#### Recognition by source family', '',
-              '| Classifier | Held-out task | GPT recall | Claude recall | Gemini recall |',
-              '|---|---|---:|---:|---:|']
-    for e in rq3:
-        recall = [f"{e['per_class'][label]['recall']:.1%}" for label in project.LABELS]
-        lines.append('| ' + ' | '.join([e['model'], e['held_out_task']] + recall) + ' |')
-    lines += ['', '### RQ4: What characteristics distinguish different LLMs?', '',
-              'We examined response token counts and lexical diversity using the same tokenizer as the classifiers. Lexical diversity is the number of unique tokens divided by the total token count; it depends on response length and is descriptive rather than a controlled comparison.', '',
-              '| Family | Mean tokens | Median tokens | Minimum | Maximum | Mean lexical diversity |',
-              '|---|---:|---:|---:|---:|---:|']
-    for label, stats in rq4['descriptive'].items():
-        lines.append(f"| {label} | {stats['mean_tokens']:.1f} | {stats['median_tokens']:.1f} | {stats['min_tokens']} | {stats['max_tokens']} | {stats['mean_lexical_diversity']:.3f} |")
-    length = rq4['length_only']
-    lines += ['', f"A classifier using only response length achieved {length['accuracy']:.1%} accuracy and {length['macro_f1']:.3f} macro F1. Within each training fold, it calculated each family's mean log token count and predicted the closest mean for held-out responses. It used the same grouped folds without test-based threshold tuning.", '',
-              f"We also retrained both networks on only the first {prefix} response tokens. Every record has at least {prefix} tokens, so all ablation inputs have the same length. Folds and training seeds were unchanged.", '',
-              '| Classifier | Full-response accuracy | Equal-length prefix accuracy | Change (percentage points) |',
-              '|---|---:|---:|---:|']
-    for full, shortened in zip(rq4['full_response'], rq4['prefix_ablation']):
-        lines.append(f"| {full['model']} | {full['accuracy']:.1%} | {shortened['accuracy']:.1%} | {100*(shortened['accuracy']-full['accuracy']):+.1f} |")
-    lines += ['', 'Length-only performance indicates how much source information is present in response length in this collection. The prefix ablation changes content and vocabulary as well as length, so it cannot isolate a causal effect of length or prove what the original networks used. The tokenizer removes punctuation, capitalization, and most formatting; those signals were not directly evaluated. Shared chat history, extraction artifacts, the clipped Gemini response, and the small dataset remain limitations.', '',
-              '#### Reproducibility', '',
-              f"This run used {results['config']['epochs']} epochs and the settings imported from main.py. Dataset SHA-256: `{results['config']['data_sha256']}`. `results/rq3_rq4.json` stores the complete configuration, predictions, confusion matrices, per-class metrics, and training losses."]
-    (output_dir / 'rq3_rq4_sections.md').write_text('\n'.join(lines) + '\n')
-
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=Path, default=ROOT / 'data.json')
     parser.add_argument('--epochs', type=int, default=30)
     parser.add_argument('--prefix-tokens', type=int, default=20)
-    parser.add_argument('--output-dir', type=Path, default=ROOT / 'results')
     args = parser.parse_args()
     if args.epochs < 1 or args.prefix_tokens < 1 or args.prefix_tokens > project.MAX_LENGTH:
         parser.error('Use positive epochs and prefix length no greater than MAX_LENGTH.')
@@ -172,22 +124,28 @@ def main():
         descriptive[label] = {'mean_tokens': statistics.mean(counts), 'median_tokens': statistics.median(counts),
                               'min_tokens': min(counts), 'max_tokens': max(counts),
                               'mean_lexical_diversity': statistics.mean(diversity)}
-    config = {'epochs': args.epochs, 'seed': project.SEED, 'prefix_tokens': args.prefix_tokens,
-              'labels': project.LABELS, 'batch_size': project.BATCH_SIZE,
-              'learning_rate': project.LEARNING_RATE, 'max_length': project.MAX_LENGTH,
-              'grouped_test_prompt_ids': folds, 'python': sys.version.split()[0],
-              'torch': torch.__version__, 'numpy': np.__version__,
-              'data_sha256': hashlib.sha256(args.data.read_bytes()).hexdigest(),
-              'main_py_sha256': hashlib.sha256((ROOT / 'main.py').read_bytes()).hexdigest(),
-              'truncated_response_ids': [key for key, length in lengths.items() if length > project.MAX_LENGTH]}
-    results = {'config': config, 'rq3': run_rq3(rows, args.epochs),
-               'rq4': {'descriptive': descriptive, 'length_only': run_length_only(rows, folds, lengths),
-                       'full_response': run_grouped(rows, folds, args.epochs),
-                       'prefix_ablation': run_grouped(rows, folds, args.epochs, args.prefix_tokens)}}
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    (args.output_dir / 'rq3_rq4.json').write_text(json.dumps(results, indent=2) + '\n')
-    write_sections(results, args.output_dir)
-    print('Saved rq3_rq4.json and rq3_rq4_sections.md.', flush=True)
+    rq3 = run_rq3(rows, args.epochs)
+    length_result = run_length_only(rows, folds, lengths)
+    full_results = run_grouped(rows, folds, args.epochs)
+    prefix_results = run_grouped(rows, folds, args.epochs, args.prefix_tokens)
+
+    print('\nRQ3 results')
+    for result in rq3:
+        print(f"{result['model']} tested on {result['held_out_task']}: "
+              f"accuracy {result['accuracy']:.1%}, macro F1 {result['macro_f1']:.3f}")
+        for label in project.LABELS:
+            print(f"  {label} recall: {result['per_class'][label]['recall']:.1%}")
+
+    print('\nRQ4 response characteristics')
+    for label, stats in descriptive.items():
+        print(f"{label}: average tokens {stats['mean_tokens']:.1f}, "
+              f"average lexical diversity {stats['mean_lexical_diversity']:.3f}")
+    print(f"Length only: accuracy {length_result['accuracy']:.1%}, "
+          f"macro F1 {length_result['macro_f1']:.3f}")
+    for full, prefix in zip(full_results, prefix_results):
+        print(f"{full['model']}: full answer accuracy {full['accuracy']:.1%}, "
+              f"first {args.prefix_tokens} tokens accuracy {prefix['accuracy']:.1%}, "
+              f"drop {100 * (full['accuracy'] - prefix['accuracy']):.1f} percentage points")
 
 
 if __name__ == '__main__':
