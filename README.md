@@ -22,7 +22,6 @@ The text was extracted and cleaned from three response PDFs. One Gemini answer w
 - `data.json`: Prompts, responses, model labels, and task categories.
 - `data_notes.json`: Data sources and extraction notes.
 - `requirements.txt`: Python packages.
-- `report.md`: Earlier RQ1/RQ2 report draft. Its results have not been updated to match the current code.
 
 ## Run
 
