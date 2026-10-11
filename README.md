@@ -15,6 +15,8 @@ The text was extracted and cleaned from three response PDFs. One Gemini answer w
 
 ## Files
 
+- [Final_Report.pdf](Final_Report.pdf): Final report covering RQ1 through RQ4.
+- [Final_Report.md](Final_Report.md): Markdown version of the same final report.
 - `main.py`: CNN and LSTM models, data checks, and RQ1/RQ2 experiments.
 - `rq3_rq4.py`: RQ3/RQ4 experiments. It imports the models and helper functions from `main.py`.
 - `data.json`: Prompts, responses, model labels, and task categories.
