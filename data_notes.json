@@ -1,0 +1,51 @@
+{
+  "team": {
+    "leader": "Sanyam Agrawal",
+    "member": "Shaan Patel"
+  },
+  "dataset_construction_date": "2026-10-08",
+  "source_documents": [
+    {
+      "file": "GPT_Responses.pdf",
+      "family": "GPT",
+      "sha256": "464b24486ef994a552c76e3d8ae7c4deb55715fab14e7ef2f18a084b25b1ddc4"
+    },
+    {
+      "file": "Claude_Responses.pdf",
+      "family": "Claude",
+      "sha256": "c896bb0aba6c32a43e19dff6b4e90795dfa938ce20ee20f9ef9e857622f7d316"
+    },
+    {
+      "file": "Gemini_Responses.pdf",
+      "family": "Gemini",
+      "sha256": "1fe0a8d7742c586b297d32c2e765881394216d4a1f3d29bc7e391c8c5d2a1caa"
+    }
+  ],
+  "model_versions": {
+    "GPT": "6.1 Sol Medium",
+    "Claude": "Sonnet 5.5 Medium",
+    "Gemini": "3.6 Flash"
+  },
+  "collection_details": {
+    "collector": "Not yet confirmed",
+    "generation_date": "Not confirmed; GPT/Gemini print headers show October 8, 2026, which is an export date rather than proof of generation date.",
+    "sampling_settings": "Unknown",
+    "conversation_context": "The user confirmed one ongoing chat for the prompts for each model. Immediate prompts are stored as features; full preceding context and personalization settings are not supplied."
+  },
+  "extraction": [
+    "GPT: pdfplumber text extraction in visual order. Removed print headers/footers and duplicated computer-text prompt.",
+    "Claude: Apple Vision OCR on rendered pages, followed by visual corrections to omitted words/headings, symbols, and encoding example.",
+    "Gemini: pdfplumber dedupe_chars followed by extraction in visual order. Removed headers, footers, suggested-reply Yes buttons and Show code controls.",
+    "Reflowed line breaks, tables and fractions without rewriting response prose or correcting source factual errors.",
+    "No responses generated or added. Source labels are based on supplied filenames and user-provided family identification.",
+    "Prompt IDs 1-8 and 13-16 match the existing report convention; the gap does not indicate missing records in this dataset."
+  ],
+  "flags": [
+    {
+      "record_id": "gemini_04",
+      "detail": "Computer-text response is clipped after the HDD sentence on PDF page 6. Visible complete text was retained, the unreadable fragment removed, and no missing words inferred. The table heading UTF-8 Binary By is also clipped at the right edge."
+    }
+  ],
+  "ai_assistance": "Codex assisted with PDF extraction/OCR correction, code review, experiment execution, and report preparation. Team members must review, understand, and verify the submitted work.",
+  "model_version_evidence": "User-reported labels in this chat; not independently verified."
+}
